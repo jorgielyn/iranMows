@@ -1,44 +1,64 @@
-// Create a client instance
-var client = new Paho.Client("broker.hivemq.com", 8000, "clientId");
-var buttonConnect = document.getElementById('button-Connect');
-var buttonPublish = document.getElementById('buttonPublish');
-// set callback handlers
-client.onConnectionLost = onConnectionLost;
-client.onMessageArrived = onMessageArrived;
+// basic functionalities
+var client;
 
-// connect the client
-client.connect({onSuccess:onConnect});
+var btnConnect = document.getElementById('btn-connect')
+var btnPublish = document.getElementById("publish-btn")
 
 
-// called when the client connects
-function onConnect() {
-  // Once a connection has been made, make a subscription and send a message.
-  console.log("Connected Successfully!");
-  client.subscribe("World");
-  message = new Paho.Message("Hello");
-  message.destinationName = "World";
-  client.send(message);
-}
+// client = mqtt.connect("ws://broker.hivemq.com:8000/mqtt")
+// client.subscribe("mqtt/demo")
 
-// called when the client loses its connection
-function onConnectionLost(responseObject) {
-  if (responseObject.errorCode !== 0) {
-    console.log("onConnectionLost:"+responseObject.errorMessage);
-  }
-}
 
-// called when a message arrives
-function onMessageArrived(message) {
-  console.log("onMessageArrived:"+message.payloadString);
-}
 
-buttonConnect.addEventListener('click',function(e){
-  e.preventDefault();
-  console.log('connectButton..');
-  client.connect({onSuccess:onConnect});
+
+// client.publish("mqtt/demo", "hello world!")
+btnConnect.addEventListener('click', function (e) {
+e.preventDefault();
+console.log("connect button clicked..")
+client = mqtt.connect("ws://broker.hivemq.com:8000/mqtt")
+
+client.subscribe("mqtt/demo")
+
+client.on("connect", function () {
+console.log("Successfully connected");
+})
+})
+btnPublish.addEventListener('click', function (e) {
+e.preventDefault();
+console.log("publish button clicked..")
+client.publish("mqtt/demo","hi I'm Renzy good Morning")
+client.on("message", function (topic, payload) {
+console.log([topic, payload].join(": "));
+// client.end();
+
+})
+client = mqtt.connect("ws://broker.hivemq.com:8000/mqtt")
+
 })
 
-buttonPublish.addEventListener('click',function(e){
-  e.preventDefault();
-  console.log('publishButton')
-})
+// // advance functionalities
+// client = mqtt.connect("ws://broker.hivemq.com:8000/mqtt")
+// client.subscribe("mqtt/demo", function (err){
+// if (err){
+// console.log(err);
+// } else {
+// console.log("subscribed")
+// }
+// })
+
+// client.on("connect", function(){
+// console.log("Successfully connected");
+// })
+
+// client.on("message", function (topic, payload) {
+// console.log([topic, payload].join(": "));
+// client.end();
+// })
+
+// client.publish("mqtt/demo", "hello world!", function(err){
+// if (err){
+// console.log(err)
+// } else {
+// console.log("published")
+// }
+// })

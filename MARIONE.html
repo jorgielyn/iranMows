@@ -1,0 +1,57 @@
+
+
+
+
+   
+<!DOCTYPE html>
+<html>
+  <head>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <style type="text/css">
+      td{
+        width: 190px;
+        height: 50px;
+        border: solid black 1px;
+        text-align: center;
+      }
+
+    </style>
+  </head>
+
+  <body>
+    <table>
+        <thead>
+            <tr>
+                <td>Name</td>
+                <td>Course</td>
+            </tr>
+        </thead>
+        <tbody>
+            
+        </tbody>
+    </table>
+    <script type="text/javascript">
+        var list=[["marion","cct","<button>button</button>"],["jay","cct","<button>button</button>"]];
+
+        $("document").ready(function(){
+            addBody();
+            
+        });
+        function addBody(){
+            for(var a of list){
+                $("tbody").append("<tr>");
+                for(var b of a){                    
+                    $("tbody").append("<td>"+b+"</td>");          
+                }
+                $("tbody").append("</tr>");
+                $("tbody td").on("mouseover",function(){
+                                          
+                    $(this).closest("tr").css('visibility', 'hidden');
+
+            });
+                
+            }
+        }
+    </script>
+  </body>
+</html>
