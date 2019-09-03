@@ -1,0 +1,158 @@
+* {
+    box-sizing: border-box;
+  }
+  body
+  {
+      width: 100%;
+      height: 100%;
+  }
+  
+  #box
+  {
+      height: 750px;
+      width: 60%;
+      position: absolute;
+      border: 2px solid black;
+      left: 20%;
+      background-color: #FAE5D3  ;
+      box-shadow: 10px 10px 5px #ccc;
+      -moz-box-shadow: 10px 10px 5px #ccc;
+      -webkit-box-shadow: 10px 10px 5px #ccc;
+      -khtml-box-shadow: 10px 10px 5px #ccc;
+      border-radius: 10px;
+  }
+  .column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    height: 300px; 
+  }
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  #box2
+  {
+    height: 45%;
+    width: 27%;
+    position: absolute;
+    border: 2px solid black;
+    left: 65%; 
+    border-radius: 20px; 
+    box-shadow: 10px 10px 5px #ccc;
+      -moz-box-shadow: 10px 10px 5px #ccc;
+      -webkit-box-shadow: 10px 10px 5px #ccc;
+      -khtml-box-shadow: 10px 10px 5px #ccc;
+    top: 4%;
+  }
+  #box3
+  {
+    height: 45%;
+    width: 27%;
+    position: absolute;
+    border: 2px solid black;
+    left: 65%; 
+    top: 51%; 
+    border-radius: 20px;
+    box-shadow: 10px 10px 5px #ccc;
+      -moz-box-shadow: 10px 10px 5px #ccc;
+      -webkit-box-shadow: 10px 10px 5px #ccc;
+      -khtml-box-shadow: 10px 10px 5px #ccc;
+  }
+  h4
+  {
+      text-align: center;
+      background-color: aquamarine;
+      position: relative;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+      line-height: 25px;
+     
+  }
+  .dropdown
+  {
+      position: relative;
+      left: 2%;
+      width: 30px;
+  }
+  .hide
+  {
+      visibility: hidden;
+  }
+  #content
+  {
+      position: relative;
+      margin-left: 37%;
+      top: 1%;
+  }
+  h1
+  {
+      position: relative;
+      left: 20%;
+  }
+  dt
+  {
+      position: relative;
+      left: 5%;
+  }
+  p
+  {
+      position: relative;
+      left: 10%;
+      text-align: justify;
+  }
+  #OR
+  {
+      position: relative;
+      left: -17%;
+  }
+  span
+  {
+      font-weight: bolder;
+      color: dodgerblue;
+  }
+  #calc
+  {
+      position: relative;
+      left: -7%;
+  }
+  #title
+  {
+      font-weight: bold;
+  }
+  .a, .b, .c, .d, .e, .f, .g, .h, .i {
+   display: none;
+    font-family: 'Segoe UI';
+}
+#dates
+{
+    position: absolute;
+    margin-left: 36%;
+    margin-top: -14.5%;
+}
+
+
+.equals
+{
+    position: relative;
+    left: 70px;
+    margin-top: -21px;
+}
+.equalss
+{
+    position: relative;
+    left: 70px;
+    margin-top: -2px;
+}
+.display
+{
+    position: relative;
+    left: 20px;
+}
+.displaysum
+{
+    position: relative;
+    left: 115px;
+    margin-top: -29px;
+}

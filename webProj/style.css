@@ -1,0 +1,438 @@
+body {
+    background: #F1F3FA;
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+/* body{
+  box-sizing: border-box;
+  border: 3px solid black;
+  height: 700px;
+  width: 1150px;
+  
+  } */
+  
+  /* Profile container */
+  .profile {
+    margin: 0 0;
+  }
+  
+  /* Profile sidebar */
+  .profile-sidebar {
+    padding: 20px 0 10px 0;
+    background: rgb(224, 236, 238);
+    height: 740px;
+    width: 330px;       
+    margin-top: 20px;
+    margin-bottom: 20px;
+    position: relative;
+    left: 5px;
+  
+    
+  }
+  
+  .profile-userpic img {
+    float: none;
+    margin: 0 auto;
+    width: 200px;
+    height: 200px;
+    -webkit-border-radius: 50% !important;
+    -moz-border-radius: 50% !important;
+    border-radius: 50% !important;
+  }
+  
+  .profile-usertitle {
+    text-align: center;
+    margin-top: 20px;
+    font-weight: bold;
+  }
+  
+  .profile-usertitle-name {
+    color: #5a7391;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 7px;
+    font-weight: bold;
+  }
+  
+  .profile-usertitle-job {
+    text-transform: uppercase;
+    color: #3281c2;
+    font-size: 12px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    font-weight: bold;
+  }
+  
+  /* .profile-userbuttons {
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  .profile-userbuttons .btn {
+    text-transform: uppercase;
+    font-size: 11px;
+    font-weight: 600;
+    padding: 6px 15px;
+    margin-right: 5px;
+  }
+  
+  .profile-userbuttons .btn:last-child {
+    margin-right: 0px;
+  } */
+      
+  .profile-usermenu {
+    margin-top: 30px;
+  }
+  
+  .profile-usermenu ul li {
+    border-bottom: 1px solid #f0f4f7;
+  }
+  
+  .profile-usermenu ul li:last-child {
+    border-bottom: none;
+  }
+  
+  .profile-usermenu ul li a {
+    color: #93a3b5;
+    font-size: 14px;
+    font-weight: 400;
+  }
+  
+  .profile-usermenu ul li a i {
+    margin-right: 8px;
+    font-size: 14px;
+  }
+  
+  .profile-usermenu ul li a:hover {
+    background-color: #fafcfd;
+    color: black;
+  }
+  
+  .profile-usermenu ul li.active {
+    border-bottom: none;
+  }
+  
+  .profile-usermenu ul li.active a {
+    color: black;
+    background-color: #bcd8eb;
+    border-left: 3px solid rgb(26, 105, 119);
+    margin-left: -2px;
+  }
+  
+  /* Profile Content */
+  .profile-content {
+    padding: 20px;
+    background: rgb(246, 255, 255);
+    margin-top: 65px;
+    width: 1110px;
+    height: 670px;
+    margin-left: 38px;
+
+
+    
+  }
+
+  /* Create two equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 23%;
+    padding: 5px;
+    height: 300px; 
+    
+  }
+
+  .column2 {
+    float: left;
+    width: 40%;
+    padding: 7px;
+    height: 300px; 
+    margin-top: 10%;
+    position: relative;
+    left: 15%;
+  }
+  
+  /* Clear floats after the columns */
+  .rows:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  .container1
+  {
+      background-color: rgb(89, 143, 173);
+      width: 370px;
+      margin-top: 20%;
+  }
+
+  .container2
+  {
+      background-color: rgb(34, 88, 117);
+      height: 780px;
+      width: 1210px;
+      margin-top: 20%;
+  }
+
+  #inf
+  {
+    font-weight: bold;
+    font-size: 20px;
+    color: #3281c2;
+  }
+  h4
+  {
+    text-align: justify;
+  }
+  h1
+  {
+    margin-top: 8%;
+    position: relative;
+    left: -2%;
+  }
+  span
+  {
+    font-weight: bolder;
+  }
+  
+
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: right;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+
+/* #mainNav {
+  background-color:black;
+  
+ }
+ 
+ #mainNav .navbar-toggler {
+  font-size: 12px;
+  right: 0;
+  padding: 13px;
+  text-transform: uppercase;
+  color:black;
+  border: 0;
+  background-color: #fed136;
+  font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+ }
+ 
+ #mainNav .navbar-brand {
+  color: #fed136;
+  font-family: 'Kaushan Script', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+ }
+ 
+ #mainNav .navbar-brand.active, #mainNav .navbar-brand:active, #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
+  color: #fec503;
+ }
+ 
+ #mainNav .navbar-nav .nav-item .nav-link {
+  font-size: 90%;
+  font-weight: 400;
+  padding: 0.75em 0;
+  letter-spacing: 1px;
+  color: white;
+  font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+ }
+ 
+ #mainNav .navbar-nav .nav-item .nav-link.active, #mainNav .navbar-nav .nav-item .nav-link:hover {
+  color: #fed136;
+ }
+ 
+ @media (min-width: 992px) {
+  #mainNav {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    -webkit-transition: padding-top 0.3s, padding-bottom 0.3s;
+    transition: padding-top 0.3s, padding-bottom 0.3s;
+    border: none;
+    background-color: transparent;
+  }
+  #mainNav .navbar-brand {
+    font-size: 1.75em;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+  #mainNav .navbar-nav .nav-item .nav-link {
+    padding: 1.1em 1em !important;
+  }
+  #mainNav.navbar-shrink {
+    padding-top: 0;
+    padding-bottom: 0;
+    background-color: #212529;
+  }
+  #mainNav.navbar-shrink .navbar-brand {
+    font-size: 1.25em;
+    padding: 12px 0;
+  }
+ } */
+
+ .logo
+{
+  height: 65px;
+  width: 65px;
+  border-radius: 50%;
+  margin-left: 13%;
+ margin-top: 2px;
+}
+
+#navv
+{
+  width: 100%;
+}
+#online{
+  color: #fed136;
+  margin-top: -20px;
+  font-family: 'Kaushan Script', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  position: relative;
+  left: 20%;
+}
+
+
+h3{
+  background-color: blue;
+  color: white;
+  }
+  
+  .container:after{
+  content: "";
+  display: table;
+  clear: both;
+  }
+  
+  
+  #head{
+  text-align: center;
+  display: inline-block;
+  margin-left: 300px;
+  margin-right: 500px;
+  margin-top: 5%;
+  margin-left: 30px;
+  }
+  
+  #head input{
+  width: 200px;
+  margin-left: 50px;
+  }
+  
+  
+  
+  .center{
+     float: left;
+     padding: 10px;
+     border: 1px solid black;
+     height: 350px;
+  width: 350px;
+  margin-bottom: 5px;
+  margin-left: 2px;
+  }
+  
+  #pay{
+  margin-left: 4px;
+  }
+  
+  #pay input {
+  width: 54px;
+  margin-left: 20px;
+  }
+  
+  #tax input{
+  margin-left: 180px;
+  width: 80px;
+  }
+  
+  #tax1 input{
+  margin-left: 160px;
+  width: 80px;
+  }
+  
+  
+  #tablePay{
+  margin-left: 4px;
+  }
+  
+  #tablePay input{
+  width: 110px;
+  margin-left: 15px;
+  }
+  
+  #tDeduct input{
+  margin-left: 200px;
+  width: 80px;
+  }
+  
+  
+  #deduction input{
+  margin-left: 80px;
+  width: 90px;
+  }
+  
+  /*CONTAINER 2*/
+  #name, #cash, #net{
+  float: left;
+     padding: 15px;
+     border: 1px solid black;
+     height: 100px;
+  width: 350px;
+  /* margin-bottom: px; */
+  margin-left: 115px;
+  }
+  
+  #name input{
+  width: 330px;
+  margin-left: -5px;
+  }
+  
+  #cash input{
+  width: 330px;
+  margin-left: 5px;
+  }
+
+  #slip
+  {
+    display: none;
+  }
+
+  #accSet
+  {
+    display: none;
+  }
+
+  #help
+  {
+    display: none;
+  }
+
+  i
+  {
+    float: left;
+    position: relative;
+    top: -21px;
+  }
+  .ily
+  {
+    position: relative;
+    top: 8px;
+  }

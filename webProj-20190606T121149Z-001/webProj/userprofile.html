@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>User Profile</title>
+    <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>  
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    <script type="text/javascript" src="script.js"></script>
+    <!-- <script src="script.js"></script> -->
+</head>
+<body>
+     <!-- Navigation -->
+     <nav class="navbar navbar-expand-md navbar-dark" id="mainNav">
+        <div class="container">
+            <img class="logo" src="./Assets/logo.png"><a class="navbar-bran js-scroll-trigger" href="#paget-top"><h4>Online Tracking Salary</h4></a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav text-uppercase ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#contactus">Contact Us</a>
+                    </li>                
+                </ul>
+            </div>
+        </div> 
+     </nav>
+ <!-- <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+        <div class="container">
+                <img class="logo" src="./Assets/logo.png"> <a class="navbar-brand js-scroll-trigger" href="#page-top">Online Tracking Salary </a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                Menu
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav text-uppercase ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="#services">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="#contactus">Contact Us</a>
+                </li>                
+                </ul>
+            </div>
+        </div>    
+      </nav> -->
+            
+    <div class="rows">
+        <div class="column">
+                <div class="container1">
+                        <div class="row profile">
+                            <div class="col-md-3">
+                                <div class="profile-sidebar">
+                                    <!-- SIDEBAR USERPIC -->
+                                    <div class="profile-userpic">
+                                        <img src="./Assets/balot.jpg" class="img-responsive" alt="User">
+                                    </div>
+                                    <!-- END SIDEBAR USERPIC -->
+                                    <!-- SIDEBAR USER TITLE -->
+                                    <div class="profile-usertitle">
+                                        <div class="profile-usertitle-name">
+                                            David Potrido
+                                        </div>
+                                        <div class="profile-usertitle-job">
+                                            Full-stack Developer
+                                        </div>
+                                    </div>
+                                    <!-- END SIDEBAR USER TITLE -->
+                                    <!-- SIDEBAR BUTTONS -->
+                                    <!-- <div class="profile-userbuttons">
+                                        <button type="button" class="btn btn-success btn-sm">Follow</button>
+                                        <button type="button" class="btn btn-danger btn-sm">Message</button>
+                                    </div> -->
+                                    <!-- END SIDEBAR BUTTONS -->
+                                    <!-- SIDEBAR MENU -->
+                                    <div class="profile-usermenu">
+                                        <ul class="nav">
+                                            <li>
+                                                <a href="#" onclick="UserInfo()" class="list-group-item list-group-item-action">
+                                                <i class="glyphicon glyphicon-user" id="inf"></i>
+                                                User Information </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" onclick="PaySlip()" class="list-group-item list-group-item-action">
+                                                <i class="glyphicon glyphicon-list-alt" id="inf"></i>
+                                                View Payslip </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" onclick="AccountStng()" class="list-group-item list-group-item-action">
+                                                <i class="glyphicon glyphicon-cog" id="inf"></i>
+                                                Account Settings </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" onclick="Help()" class="list-group-item list-group-item-action">
+                                                <i class="glyphicon glyphicon-flag" id="inf"></i>
+                                                Help </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <!-- END MENU -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="container2">
+                            <div class="col-md-9">
+                                    <div class="profile-content" >
+                                        <center>
+                                            <div id="info">
+                                                <h1>PERSONAL INFORMATION</h1>
+                                                <div class="rows">
+                                                    <div class="column2">
+                                                        <h4><span>First Name:</span> Jeff David</h4>
+                                                        <h4><span>Middle Name:</span> Hudar</h4>
+                                                        <h4><span>Last Name:</span> Potrido</h4>
+                                                        <h4><span>Email Address:</span> jpotrido@gmail.com</h4>
+                                                        <h4><span>Contact Number:</span> 09123456789</h4>
+                                                        <h4><span>Address:</span> Oslob, Cebu City</h4>
+                                                        <h4><span>Company Name:</span> Cloud Ninja</h4>
+                                                        <h4><span>Office/Department:</span> Development Department</h4>
+                                                        <h4><span>Position:</span> Senior Developer</h4>
+                                                    </div>
+                                                    <div class="column2">
+                                                        <h4><span>Father's Name:</span> Gualberto Potrido</h4>
+                                                        <h4><span>Mother's Name:</span> Digna Potrido</h4>
+                                                        <h4><span>Birthdate:</span> September 2, 1997</h4>
+                                                        <h4><span>Birthplace:</span> Sta. Cruz Laguna</h4>
+                                                        <h4><span>Age:</span> 21</h4>
+                                                        <h4><span>Sex:</span> Male</h4>
+                                                        <h4><span>Status:</span> Single</h4>
+                                                        <h4><span>Religion:</span> Roman Catholic</h4>
+                                                        <h4><span>Nationality:</span> Filipino</h4>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div id="slip" >
+                                                <h1>PAYSLIP</h1>
+                                                <h1>Sorry po lablab</h1>
+                                            </div> 
+                                            <div  id="accSet">
+                                                <h1>ACCOUNT SETTINGS</h1>
+                                                <h1>Mao po ni ang akoang gibuhat po</h1>
+                                            </div>
+                                            <div  id="help">
+                                                <h1>HELP</h1>
+                                                <h1>I LOVE YOU PO</h1>
+                                            </div>
+                                        </center>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+</body>
+</html>

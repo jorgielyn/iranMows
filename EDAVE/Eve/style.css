@@ -1,0 +1,200 @@
+/* navbar */
+* 
+{
+    box-sizing: border-box;
+}
+ul 
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+    height: 60px;
+}
+  
+li 
+{
+float: left;
+height: 50px;
+}
+
+li a 
+{
+display: block;
+color: white;
+text-align: center;
+padding: 21px 18px;
+text-decoration: none;
+font-size: 17px;
+font-weight: bold;
+}
+
+li a:hover 
+{
+background-color: #111;
+}
+
+li a.active {
+    background-color: #ABB2B9;
+    color: white;
+  }
+/* ---------------------------------------------------------------------- */
+
+header
+{
+    padding-top: 2px;
+}
+
+/* ---------------------------------------------------------------------- */
+
+.bgi
+{
+    height: 350px;
+    width: 100%;
+}
+
+.pic 
+{
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    -moz-box-shadow: 0px 6px 5px #ccc;
+		-webkit-box-shadow: 0px 6px 5px #ccc;
+		box-shadow: 0px 10px 5px #ccc;
+		-moz-border-radius:190px;
+		-webkit-border-radius:190px;
+		border-radius:190px;
+}
+
+/* ---------------------------------------------------------------------- */
+/* text above my img */
+
+.container 
+{
+    position: relative;
+    text-align: center;
+    color: white;
+}
+.captn
+{
+    position: absolute;
+    top: 50%;
+    left: 83%;
+    transform: translate(-50%, -50%);
+}
+.log
+{
+
+    position: absolute;
+    top: 19%;
+    left: 4%;
+    transform: translate(-50%, -50%);
+}
+#logg
+{
+    height: 110px;
+    width: 110px;
+    border-radius: 50%;
+}
+h1
+{
+    font-style: normal;
+    font-size: 80px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+#pc
+{
+    color: mistyrose;
+}
+#cc
+{
+    color: rgb(88, 158, 175);
+}
+#tc
+{
+    color: rgb(5, 3, 3);
+}
+#sc
+{
+    color: rgb(245, 242, 239);
+}
+#fc
+{
+    color: rgb(202, 98, 95);
+}
+
+/* ---------------------------------------------------------------------- */
+
+p
+{
+    font-weight: bold;
+}
+
+/* ---------------------------------------------------------------------- */
+
+/* footer */
+
+footer
+{
+   width: 100%;
+   background-color: black;
+   color: white;
+   text-align: center;
+   display: block;
+   height: 95px;
+}
+.foot1
+{
+
+    position: absolute;
+    top: 70%;
+    left: 52.5%;
+    transform: translate(-50%, -50%);
+}
+.foot2
+{
+
+    position: absolute;
+    top: 70%;
+    left: 53.8%;
+    transform: translate(-50%, -50%);
+}
+.foot3
+{
+
+    position: absolute;
+    top: 70%;
+    left: 55.1%;
+    transform: translate(-50%, -50%);
+}
+#fotI
+{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+}
+#fotIi
+{
+    height: 21px;
+    width: 21px;
+    border-radius: 50%;
+}
+.footcaptn
+{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: center;
+}
+.footcaptn2
+{
+    position: absolute;
+    top: 65%;
+    left: 47.5%;
+    transform: translate(-50%, -50%);
+    position: center;
+}
+
+/* ---------------------------------------------------------------------- */

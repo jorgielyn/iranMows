@@ -1,0 +1,272 @@
+/* log in modal */
+
+   .modal-login {		
+		color: #636363;
+		width: 350px;
+	}
+	.modal-login .modal-content {
+		padding: 20px;
+		border-radius: 5px;
+		border: none;
+	}
+	.modal-login .modal-header {
+		border-bottom: none;   
+        position: relative;
+        justify-content: center;
+	}
+	.modal-login h4 {
+		text-align: center;
+		font-size: 26px;
+		margin: 30px 0 -15px;
+	}
+	.modal-login .form-control:focus {
+		border-color: #6B20AE;
+	}
+	.modal-login .form-control, .modal-login .btn {
+		min-height: 40px;
+		border-radius: 3px; 
+	}
+	.modal-login .close {
+        position: absolute;
+		top: -5px;
+		right: -5px;
+	}	
+	.modal-login .modal-footer {
+		background: #ecf0f1;
+		border-color: #dee4e7;
+		text-align: center;
+        justify-content: center;
+		margin: 0 -20px -20px;
+		border-radius: 5px;
+		font-size: 13px;
+	}
+	.modal-login .modal-footer a {
+		color: #999;
+	}		
+	.modal-login .avatar {
+		position: absolute;
+		margin: 0 auto;
+		left: 0;
+		right: 0;
+		top: -70px;
+		width: 110px;
+		height: 110px;
+		border-radius: 50%;
+		z-index: 9;
+		background: #6B20AE;
+		padding: 15px;
+		box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
+	}
+	.modal-login .avatar img {
+		width: 100%;
+      border-radius: 50%;
+	}
+	.modal-login.modal-dialog {
+		margin-top: 250px;
+	}
+    .modal-login .btn {
+        color: #fff;
+        border-radius: 4px;
+		background: #6B20AE;
+		text-decoration: none;
+		transition: all 0.4s;
+        line-height: normal;
+        border: none;
+    }
+	.modal-login .btn:hover, .modal-login .btn:focus {
+		background: #6B20AE;
+		outline: none;
+	}
+
+/* sign up modal */
+
+.modal-sign {		
+		color: #636363;
+		width: 350px;
+	}
+	.modal-sign .modal-content {
+		padding: 20px;
+		border-radius: 5px;
+		border: none;
+	}
+	.modal-sign .modal-header {
+		border-bottom: none;   
+        position: relative;
+        justify-content: center;
+	}
+	.modal-sign h4 {
+		text-align: center;
+		font-size: 26px;
+		margin: 30px 0 -15px;
+	}
+	.modal-sign .form-control:focus {
+		border-color: #6B20AE;
+	}
+	.modal-sign .form-control, .modal-login .btn {
+		min-height: 40px;
+		border-radius: 3px; 
+	}
+	.modal-sign .close {
+        position: absolute;
+		top: -5px;
+		right: -5px;
+	}	
+	.modal-sign .modal-footer {
+		background: #ecf0f1;
+		border-color: #dee4e7;
+		text-align: center;
+        justify-content: center;
+		margin: 0 -20px -20px;
+		border-radius: 5px;
+		font-size: 13px;
+	}
+	.modal-sign .modal-footer a {
+		color: #999;
+	}		
+	.modal-sign .avatar {
+		position: absolute;
+		margin: 0 auto;
+		left: 0;
+		right: 0;
+		top: -70px;
+		width: 110px;
+		height: 110px;
+		border-radius: 50%;
+		z-index: 9;
+		background: #6B20AE;
+		padding: 15px;
+		box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
+	}
+	.modal-sign .avatar img {
+		width: 100%;
+      border-radius: 50%;
+	}
+	.modal-sign.modal-dialog {
+		margin-top: 250px;
+	}
+    .modal-sign .btn {
+        color: #fff;
+        border-radius: 4px;
+		background: #6B20AE;
+		text-decoration: none;
+		transition: all 0.4s;
+        line-height: normal;
+        border: none;
+    }
+	.modal-sign .btn:hover, .modal-sign .btn:focus {
+		background: #6B20AE;
+		outline: none;
+	}
+   .float-right
+   {
+      margin-bottom: 50%;
+   }
+
+
+
+html log in and sign up
+
+
+<!-- log in modal -->
+
+            <div id="myModal" class="modal fade">
+               <div class="modal-dialog modal-login">
+                  <div class="modal-content">
+                     <div class="modal-header">
+                        <div class="avatar">
+                           <img src="images/avatar.jpg" class="float-right" alt="Avatar">
+                        </div>				
+                        <h4 class="modal-title">Login</h4>	
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                     </div>
+                     <div class="modal-body">
+                        <form action="/login" method="post">
+                           <div class="form-group">
+                              <input type="text" class="form-control" name="username" placeholder="Username" required="required">		
+                           </div>
+                           <div class="form-group">
+                              <input type="password" class="form-control" name="password" placeholder="Password" required="required">	
+                           </div>        
+                           <div class="form-group">
+                              <button type="submit" class="btn btn-primary btn-lg btn-block login-btn">Login</button>
+                           </div>
+                        </form>
+                     </div>
+                     <div class="modal-footer">
+                        <a href="myModalF" data-toggle="modal">Forgot Password?</a>
+                     </div>
+                  </div>
+               </div>
+            </div>     
+
+<!-- sign up modal -->
+
+            <div id="myModalS" class="modal fade">
+                  <div class="modal-dialog modal-sign">
+                     <div class="modal-content">
+                        <div class="modal-header">
+                           <div class="avatar">
+                              <img src="images/avatar.jpg" alt="Avatar">
+                           </div>				
+                           <h4 class="modal-title">Sign Up</h4>	
+                               <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        </div>
+                        <div class="modal-body">
+                           <form action="/register" method="post">
+                                 <div class="form-group">
+                                       <input type="text" class="form-control" name="email" placeholder="Email" required="required">		
+                                    </div>
+                              <div class="form-group">
+                                 <input type="text" class="form-control" name="username" placeholder="Username" required="required">		
+                              </div>
+                              <div class="form-group">
+                                 <input type="password" class="form-control" name="password" placeholder="Password" required="required">	
+                              </div>     
+                              <div class="form-group">
+                                 <button type="submit" class="btn btn-primary btn-lg btn-block login-btn">Sign Up</button>
+                              </div>
+                           </form>
+                        </div>
+                        <div class="modal-footer">
+                        Already have an account? <a href="myModal" data-toggle="modal">Login here</a>
+                        </div>
+                     </div>
+                  </div>
+               </div>  
+               
+<!-- forgot password modal -->
+
+               <div id="myModalF" class="modal fade">
+                     <div class="modal-dialog modal-login">
+                        <div class="modal-content">
+                           <div class="modal-header">
+                              <div class="avatar">
+                                 <img src="images/avatar.jpg" alt="Avatar">
+                              </div>				
+                              <h4 class="modal-title">Change Password</h4>	
+                                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                           </div>
+                           <div class="modal-body">
+                              <!-- <form action="home.html" method="post"> -->
+                                 <div class="form-group">
+                                    <input type="text" class="form-control" name="currpass" placeholder="Current Password" required="required">		
+                                 </div>
+                                 <div class="form-group">
+                                    <input type="password" class="form-control" name="newpass" placeholder="New Password" required="required">	
+                                 </div>  
+                                 <div class="form-group">
+                                       <input type="password" class="form-control" name="conpass" placeholder="Confirm New Password" required="required">	
+                                    </div>       
+                                 <div class="form-group">
+                                    <button type="submit" class="btn btn-primary btn-lg btn-block login-btn">Change</button>
+                                 </div>
+                              </form>
+                           </div>
+                           <div class="modal-footer">
+                              <!-- <a href="#">Forgot Password?</a> -->
+                           </div>
+                        </div>
+                     </div>
+                  </div>     
+
+

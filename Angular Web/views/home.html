@@ -1,0 +1,37 @@
+<body ng-App="myApp" ng-controller="myControl">
+    <div class="container">
+        <form action="" ng-model="myForm">
+            <div class="form-group">
+                <p>Name: <input type="text" id="fname" class="inputBox" ng-model="name" placeholder="Enter fullname"</p> <br>
+                <p>Address: <input type="text" id="addr" class="inputBox" ng-model="address" placeholder="Enter address"></p> <br>
+                <p>Age: <input type="text" id="age" class="inputBox" ng-model="age" placeholder="Enter age"></p> <br>
+                <input type="button" id="" ng-click="Add()" value="Add">
+                <input type="button" id="" ng-click="Save()" value="Save">
+            </div>
+        </form>
+    </div>
+    <hr>
+    <div>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Address</th>
+                    <th scope="col">Age</th>
+                    <th scope="col"></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="student in studentsArray">
+                    <th scope="row">{{$index + 1}}</th>
+                    <td>{{student.name}}</td>
+                    <td>{{student.address}}</td>
+                    <td>{{student.age}}</td>
+                    <td><input type="button" ng-click="Update()" value="Update"> <input type="button" ng-click="Delete()" value="Delete"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+<!-- https://www.encodedna.com/angularjs/tutorial/add-remove-table-rows-dynamically-in-angularjs.htm -->

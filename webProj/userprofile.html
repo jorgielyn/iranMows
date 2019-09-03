@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>User Profile</title>
+    <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>  
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    <script type="text/javascript" src="script.js"></script>
+    <!-- <script src="script.js"></script> -->
+</head>
+<body>
+
+        <div class="topnav">
+                
+                <a class="ily" href="#news">Contact</a>
+                <a class="ily" href="#contact">About</a>
+                <a class="ily" href="#about">Services</a>
+                <img class="logo" src="./Assets/logo.png">
+                <h2 id = "online"><i>Online Payment System</i></h2>
+        </div>
+     <!-- Navigation -->
+ <!-- <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav"> -->
+        <!-- <div class="container"> -->
+                <!-- <img class="logo" src="./Assets/logo.png"> <a class="navbar-brand js-scroll-trigger" href="#page-top">Online Tracking Salary </a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                Menu
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav text-uppercase ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="#services">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="#contactus">Contact Us</a>
+                </li>                
+                </ul>
+            </div>
+        </div>    
+      </nav> -->
+            
+    <div class="rows">
+        <div class="column">
+                <div class="container1">
+                        <div class="row profile">
+                            <div class="col-md-3">
+                                <div class="profile-sidebar">
+                                    <!-- SIDEBAR USERPIC -->
+                                    <div class="profile-userpic">
+                                        <img src="./Assets/diegs.jpg" class="img-responsive" alt="User">
+                                    </div>
+                                    <!-- END SIDEBAR USERPIC -->
+                                    <!-- SIDEBAR USER TITLE -->
+                                    <div class="profile-usertitle">
+                                        <div class="profile-usertitle-name">
+                                            Carlos Diego Loyzaga
+                                        </div>
+                                        <div class="profile-usertitle-job">
+                                            Full-stack Developer
+                                        </div>
+                                    </div>
+                                    <!-- END SIDEBAR USER TITLE -->
+                                    <!-- SIDEBAR BUTTONS -->
+                                    <!-- <div class="profile-userbuttons">
+                                        <button type="button" class="btn btn-success btn-sm">Follow</button>
+                                        <button type="button" class="btn btn-danger btn-sm">Message</button>
+                                    </div> -->
+                                    <!-- END SIDEBAR BUTTONS -->
+                                    <!-- SIDEBAR MENU -->
+                                    <div class="profile-usermenu">
+                                        <ul class="navbar-nav" id="navv">
+                                            <li>
+                                                <a href="#" onclick="UserInfo()" class="list-group-item list-group-item-action">
+                                                <i class="glyphicon glyphicon-user" id="inf"></i>
+                                                User Information </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" onclick="PaySlip()" class="list-group-item list-group-item-action">
+                                                <i class="glyphicon glyphicon-list-alt" id="inf"></i>
+                                                View Payslip </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" onclick="AccountStng()" class="list-group-item list-group-item-action">
+                                                <i class="glyphicon glyphicon-cog" id="inf"></i>
+                                                Account Settings </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" onclick="Help()" class="list-group-item list-group-item-action">
+                                                <i class="glyphicon glyphicon-flag" id="inf"></i>
+                                                Help </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" onclick="Help()" class="list-group-item list-group-item-action">
+                                                <i class="glyphicon glyphicon-log-out  " id="inf"></i>
+                                                Logout </a>
+                                            </li>
+                                 
+                                        </ul>
+                                    </div>
+                                    <!-- END MENU -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="container2">
+                            <div class="col-md-9">
+                                    <div class="profile-content">
+                                        <center>
+                                            <div id="info">
+                                                <h1>PERSONAL INFORMATION</h1>
+                                                <div class="rows">
+                                                    <div class="column2">
+                                                        <h4><span>First Name:</span> Carlos Diego</h4>
+                                                        <h4><span>Middle Name:</span> Montano</h4>
+                                                        <h4><span>Last Name:</span> Loyzada</h4>
+                                                        <h4><span>Email Address:</span> jpotrido@gmail.com</h4>
+                                                        <h4><span>Contact Number:</span> 09123456789</h4>
+                                                        <h4><span>Address:</span> Cebu City</h4>
+                                                        <h4><span>Company Name:</span> Accenture</h4>
+                                                        <h4><span>Office/Department:</span> Development Department</h4>
+                                                        <h4><span>Position:</span> Senior Developer</h4>
+                                                    </div>
+                                                    <div class="column2">
+                                                        <h4><span>Father's Name:</span> Cesar Montano</h4>
+                                                        <h4><span>Mother's Name:</span> Teresa Loyzaga</h4>
+                                                        <h4><span>Birthdate:</span> May 21, 1995</h4>
+                                                        <h4><span>Birthplace:</span> San Juan, Manila</h4>
+                                                        <h4><span>Age:</span> 24</h4>
+                                                        <h4><span>Sex:</span> Male</h4>
+                                                        <h4><span>Status:</span> Single</h4>
+                                                        <h4><span>Religion:</span> Roman Catholic</h4>
+                                                        <h4><span>Nationality:</span> Filipino</h4>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div  id="slip">
+                                                    <div id="container" class="con1">
+                                                            <div id="head">
+                                                                <form>
+                                                                    <table align="left">
+                                                                        <tr id="head1">
+                                                                            <td>Employee</td>
+                                                                            <td><input type="text" name="name" readonly value></td>
+                                                                        </tr>
+                                                            
+                                                                        <tr>
+                                                                            <td>Number</td>
+                                                                            <td><input type="text" name="num" readonly value></td>
+                                                                        </tr>
+                                                            
+                                                                        <tr>
+                                                                            <td>Employer</td>
+                                                                            <td><input type="text" name="employer" readonly="" value></td>
+                                                                        </tr>
+                                                                    </table>
+                                                                </form>
+                                                            </div>
+                                                            
+                                                            <br><br><br>
+                                                            
+                                                            <!-- PAYMENT FORM -->
+                                                            <div id="pay" class="center split">
+                                                                <form>
+                                                                    <h3 align="center">PAYMENTS</h3>
+                                                                <br><br>
+                                                                <table class="tPay" align="right">
+                                                            
+                                                                    <tr>
+                                                                        <th>Description</th>
+                                                                        <th>Hours</th>
+                                                                        <th>Rate</th>
+                                                                        <th>Amount</th>
+                                                                    </tr>
+                                                            
+                                                                    <tr>
+                                                                        <td>Standard Rate</td>
+                                                                        <td><input type="text" name="standardRate" readonly></td>
+                                                                        <td><input readonly></td>
+                                                                        <td><input readonly></td>	
+                                                                    </tr>
+                                                            
+                                                                    <tr>
+                                                                        <td>Overtime</td>
+                                                                        <td><input type="text" name="overTime" readonly></td>
+                                                                        <td><input readonly></td>
+                                                                        <td><input readonly></td>
+                                                                    </tr>
+                                                            
+                                                                    <tr>
+                                                                        <td>Total Hour Pay</td>
+                                                                        <td><input type="text" name="tHrPay"></td>
+                                                                        <td><input readonly></td>
+                                                                        <td><input readonly></td>
+                                                                    </tr>
+                                                            
+                                                                    <tr>
+                                                                        <td>Basic Pay</td>
+                                                                        <td><input type="text" name="basicPay"></td>
+                                                                        <td><input readonly></td>
+                                                                        <td><input readonly></td>
+                                                                    </tr>
+                                                            
+                                                                    <tr>
+                                                                        <td>OSPP Added</td>
+                                                                        <td><input type="text" name="ospp"></td>
+                                                                        <td><input readonly></td>
+                                                                        <td><input readonly></td>
+                                                                    </tr>
+                                                                </table>
+                                                            
+                                                            <br><br><br><br><br><br><br><br><br><br><br>
+                                                            
+                                                                <table class="tPay" align="right">
+                                                                    <tr>
+                                                                        <td>TOTAL</td>
+                                                                        <td><input readonly></td>
+                                                                        <td><input readonly></td>
+                                                                        <td><input readonly></td>
+                                                                    </tr>
+                                                                </table>
+                                                            </form>
+                                                        </div>
+                                                            
+                                                            
+                                                            <!-- DEDUCTION FORM -->
+                                                            <div id="deduc" class="center split">
+                                                                <form>
+                                                                    <h3 align="center">DEDUCTIONS</h3>
+                                                                <br><br>
+                                                            
+                                                                <table id="deduction" align="right">	
+                                                                    <tr>
+                                                                        <td>Income Tax</td>
+                                                                        <td><input readonly></td>
+                                                                    </tr>
+                                                            
+                                                                    <tr>
+                                                                        <td>National Insurance</td>
+                                                                        <td><input readonly></td>
+                                                                    </tr>
+                                                            
+                                                                    <tr>
+                                                                        <td>Stakeholder Pension</td>
+                                                                        <td><input readonly></td>
+                                                                    </tr>
+                                                            
+                                                                    <tr>
+                                                                        <td>Student Loan Repayment</td>
+                                                                        <td><input readonly></td>
+                                                                    </tr>
+                                                            
+                                                                    <tr>
+                                                                        <td>Attch:CSA</td>
+                                                                        <td><input readonly></td>
+                                                                    </tr>
+                                                                </table>
+                                                            
+                                                                <br><br><br><br><br><br><br><br><br><br><br>
+                                                                <table align="right" id="tDeduct">
+                                                                    <tr>
+                                                                        <td>TOTAL</td>
+                                                                        <td><input readonly></td>
+                                                                    </tr>
+                                                                </table>
+                                                            </form>
+                                                        </div>
+                                                            
+                                                            
+                                                            
+                                                            <!-- TO DATE FORM -->
+                                                            <div id="toDate" class="center split">
+                                                                <form>
+                                                                <h3 align="center">TO DATE</h3>
+                                                                <br><br>
+                                                            
+                                                                <table id="tax">
+                                                                    <tr>
+                                                                        <td>TAXABLE</td>
+                                                                        <td><input readonly></td>
+                                                                    </tr>
+                                                            
+                                                                    <tr>
+                                                                        <td>TAX</td>
+                                                                        <td><input readonly></td>
+                                                                    </tr>
+                                                            
+                                                                    <tr>
+                                                                        <td>NAT. INS.</td>
+                                                                        <td><input readonly></td>
+                                                                    </tr>
+                                                                </table>
+                                                            
+                                                                <br><br><br>
+                                                            
+                                                                <table id="tax1" align="right">
+                                                                    <tr>
+                                                                        <td>PAY DATE</td>
+                                                                        <td><input readonly></td>
+                                                                    </tr>
+                                                            
+                                                                    <tr>
+                                                                        <td>TAX PERIOD</td>
+                                                                        <td><input readonly></td>
+                                                                    </tr>
+                                                            
+                                                                    <tr>
+                                                                        <td>TAX CODE</td>
+                                                                        <td><input readonly></td>
+                                                                    </tr>
+                                                            
+                                                                    <tr>
+                                                                        <td>N.L. No.</td>
+                                                                        <td><input readonly></td>
+                                                                    </tr>
+                                                            
+                                                                    <tr>
+                                                                        <td>NET PAY</td>
+                                                                        <td><input readonly></td>
+                                                                    </tr>
+                                                                </table>
+                                                            </form>
+                                                        </div>
+                                                            <br><br><br><br>
+                                                    </div>
+                                                            
+                                                            
+                                                            
+  
+                                                        <div class="container" id="con2">
+                                                            <br><br><br><br><br>
+                                                            
+                                                            <div id="name" class="split">
+                                                                <form>
+                                                                    <table align="center">
+                                                                        <tr>
+                                                                            <td><input type="text" name="name" placeholder="Name" readonly></td>	
+                                                                        </tr>
+                                                            
+                                                                        <tr>
+                                                                            <td><input type="text" name="streetAddress" placeholder="Street Address" readonly></td>
+                                                                        </tr>
+                                                            
+                                                                        <tr>
+                                                                            <td><input type="text" name="city" readonly placeholder="City, state and zip"></td>
+                                                                        </tr>
+                                                                    </table>
+                                                                </form>
+                                                            </div>
+                                                            
+                                                            <div id="cash" class="split">
+                                                                <form>
+                                                                    <table align="right">
+                                                                        <tr>
+                                                                            <td><input readonly placeholder="Paid by Cash"></td>	
+                                                                        </tr>
+                                                            
+                                                                        <tr>
+                                                                            <td><input readonly placeholder="Holidays: 28 days available, 5 taken, 23 remaining"></td>
+                                                                        </tr>
+                                                                            <td><input readonly placeholder="Employer's PAYE Ref. 836/M6115"></td>
+                                                                        <tr>
+                                                            
+                                                                        </tr>
+                                                                    </table>
+                                                                </form>
+                                                            </div>
+                                                        </form>
+                                                    </div>	
+                                                </div>
+                                            <!-- </div>  -->
+                                            <div id="accSet">
+                                                <h1>ACCOUNT SETTINGS</h1>
+                                                asdfasdfasf
+                                            </div>
+                                            <div id="help">
+                                                <h1>HELP</h1>
+                                            </div>
+                                        </center>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+</body>
+</html>
